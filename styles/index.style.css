@@ -1,7 +1,25 @@
-.topBanner {
+body {
+  margin: 0 0 0 0;
+}
+
+.banner {
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  background-size: 100%;
+  background-position: center;
+}
+.banner h1 {
+  margin-right: 40px;
+}
+
+.navBanner {
   border-width: 1px 0 1px 0;
   border-style: solid;
   border-color: #000000;
+  margin: 40px 8px 40px 8px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -98,7 +116,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .topBanner {
+  .navBanner {
     display: none;
   }
 }
@@ -108,16 +126,26 @@
   }
 }
 
+article {
+  margin: 0 8px 0 8px;
+}
+article h4 {
+  margin-left: 10vw;
+}
+.articleImage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 footer {
-  position:relative;
-  left: -8px;
-  width: 100vw;
   margin-top: 300px;
   background-color: #000000;
   color: #FFFFFF;
 }
 .infos, .socialMedias {
   padding-left: 0;
+  margin: 0 0 0 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
