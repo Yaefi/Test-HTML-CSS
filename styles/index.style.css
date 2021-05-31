@@ -54,7 +54,7 @@
 .menuBurger {
   position: fixed;
   top: 0;
-  left: calc(-20vw - 1px);
+  left: calc(-20vw - 141px);
   width: calc(20vw - 20px);
   min-width: 140px;
   height: calc(100vh - 100px);
@@ -95,3 +95,15 @@
 #click1:checked ~ .burgerSubMenu, #click2:checked ~ .burgerSubMenu, #click3:checked ~ .burgerSubMenu, #click4:checked ~ .burgerSubMenu, #click5:checked ~ .burgerSubMenu, #click6:checked ~ .burgerSubMenu {
   position: static;
   visibility: visible;
+}
+
+@media screen and (max-width: 768px) {
+  .topBanner {
+    display: none;
+  }
+}
+@media screen and (min-width: 769px) {
+  .iconMenuBurger {
+    display: none;
+  }
+}
